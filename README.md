@@ -3,5 +3,5 @@ Este proyecto es parte del cursado de Talento Tech.. El proyecto se ha desarroll
 Funcionalidades
 El diseño del proyecto es responsive. El desarrollo se realizó con pc escritorio.
 Tecnologías Utilizadas
-HTML5: Estructura básica del encriptador.
+HTML5: Estructura básica.
 CSS3: Estilos y diseño responsivo.
