@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+:root {
+    --color-fondo-naranja:rgb(124, 11, 11); /* Color de fondo*/
+    --color-borde-blanco: white; /* Color del borde */
+    --color-letra-casinegro: #222; /* Color letra */
+    --color--header-casiblanco: #E3E6F3;/*color header*/
+    --color--negro:black;   
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;   
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+}
+/*h3{
+    font-size: 40px;
+    line-height: 44px;/
+}*/
+h4{
+    font-size: 20px;
+}h5{
+    font-size: 19px;  
+}h6{
+    font-size: 10px;
+}
+p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+/*header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0 ,0.06 ) ;
+}
+/*logo imagen*/
+.logo{
+    max-width: 25%; /* Asegura que el logo no exceda el ancho del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+}
+/*barra header*/
+.nbar{
+color:var(--color-letra-casinegro);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#navbar{
+    list-style: none;
+    padding: 0 90px;
+    gap: 20px;
+    position: relative  ;
+}
+/* estilo para los enlace */
+#navbar a {
+    color:var(--color--negro); /* cambia el color del texto de los enlaces */
+    text-decoration:none; /* eliminar subrayado */
+    font-weight: 600; /* opcion de hacer el texto en negrita */
+    font-size: 16px;
+    transition:0.3s ease;
+}
+/* cambiar el color de los enlaces al pasar el mous */
+#navbar a:hover {
+    color:var(--color-fondo-naranja); /* cambia el color al pasar el ratón (puedes ajustar este color) */}
+/*homepag*/
+#hero{
+    background-color:var(--color-fondo-naranja);
+    height: 90vh;
+    width:100%;
+}   
+#hero {position: relative;
+    padding: 20px; }
+.h6-container{
+        display: flex;
+        top: 0; /* coloca ariba */
+        left: 0;
+        gap: 23px ; /* Espaciado entre los elementos h6 */
+        font-size: 3rem;
+        width: 100%;
+        position: relative;
+        justify-content: space-between;
+        color:var(--color--header-casiblanco);
+        padding: 10px; /* Espacio interno */
+    }  
+.bn{
+        color:var(--color-fondo-naranja);
+        text-shadow: 
+         1px 1px 0 white, 
+        -1px -1px 0 white, 
+        -1px 1px 0 white, 
+        1px -1px 0 white; /* Borde blanco alrededor del texto */
+        padding: 10px; /* Espacio interno */
+        font-size: 3.5rem;
+}
+.tm{
+    font-size: 3.5rem;
+    color: var(--color--header-casiblanco);
+    padding: 10px; /* Espacio interno */
+}
+.cien{
+    font-size:1rem; 
+    color: var(--color--header-casiblanco);
+    padding: 5px; 
+    border: 2px solid var(--color--header-casiblanco); 
+    display: inline-block;
+    border-radius: 30px;
+}
+.doscientos{
+    font-size:1rem;
+    color: var(--color--header-casiblanco);
+    padding: 5px; 
+    border: 2px solid var(--color--header-casiblanco); 
+    display: inline-block;
+    border-radius: 30px;    
+}
+.trescientos{
+    font-size:1rem;
+    color: var(--color--header-casiblanco);
+    padding: 5px; 
+    border: 2px solid var(--color--header-casiblanco);
+    display: inline-block;
+    border-radius: 30px;
+    content: end;
+}
+.ofertas{
+        display: flex; 
+        flex-direction: row; 
+        width: 100%; 
+        gap:80px
+}

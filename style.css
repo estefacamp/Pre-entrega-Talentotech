@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+:root {
+    --color-fondo-naranja:rgb(124, 11, 11); /* Color de fondo*/
+    --color-borde-blanco: white; /* Color del borde */
+    --color-letra-casinegro: #222; /* Color letra */
+    --color--header-casiblanco: #E3E6F3;/*color header*/
+    --color--negro:black;   
+}
+h1{
+    font-size: 3.125rem; /* 50px */
+    line-height: 4rem; /* 64px */ 
+}
+h2{
+    font-size: 2.875rem; /* 46px */
+    line-height: 3.375rem; /* 54px */
+}
+/*h3{
+    font-size: 40px;
+    line-height: 44px;/
+}*/
+h4{
+    font-size: 1.25rem; /* 20px */
+}h5{
+    font-size: 1.1875rem; /* 19px */
+}h6{
+    font-size: 0.625rem; /* 10px */
+}
+p{
+    font-size: 1rem; /* 16px */
+    margin: 1rem 0 1.25rem 0; /* 15px 0 20px */
+}
+/*header start*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 0.625rem; /* 20px 10px */
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.06);
+    top:0rem;
+    left:0rem;
+    z-index: 10;
+    
+}
+/*logo imagen*/
+.logo{
+    max-width: 25%; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción */
+    
+}
+/*barra header*/
+.nbar{
+color:var(--color-letra-casinegro);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    list-style: none;
+    padding: 0 ;
+    gap: 1.25rem; /* 20px */
+    z-index: 5;
+}
+/* estilo para los enlace */
+#navbar a {
+    color:var(--color--negro); /* cambia el color del texto de los enlaces */
+    text-decoration:none; /* eliminar subrayado */
+    font-weight: 600; /* opcion de hacer el texto en negrita */
+    font-size: 16px;
+    transition:0.3s ease;
+}
+/* cambiar el color de los enlaces al pasar el mouse */
+#navbar a:hover {
+    color:var(--color-fondo-naranja); /* cambia el color al pasar el ratón (puedes ajustar este color) */}
+
+/*homepag*/
+#hero{
+    background-color:var(--color-fondo-naranja);
+    height: 100vh;
+    width:100%;
+    margin-top: 1.25rem; /* 20px */
+}   
+#hero {
+    position: relative;
+    padding: 1.25rem; /* 20px */
+}
+.h6-container{
+        display: flex;
+        top: 0; /* coloca ariba */
+        left: 0;
+        gap: 1.4375rem; /* 23px  Espaciado entre los elementos h6 */
+        font-size: 3rem;
+        width: 90%;
+        justify-content: space-between;
+        color:var(--color--header-casiblanco);
+        padding: 0.625rem; /* 10px */ /* Espacio interno */
+        margin: 0 auto; /* Centra el elemento */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra suave */
+    }  
+.bn{
+        color:var(--color-fondo-naranja);
+        text-shadow: 
+         1px 1px 0 white, 
+        -1px -1px 0 white, 
+        -1px 1px 0 white, 
+        1px -1px 0 white; /* Borde blanco alrededor del texto */
+        padding: 0.625rem; /* 10px */
+        font-size: 3.5rem;
+}
+.tm{
+    font-size: 3.5rem;
+    color: var(--color--header-casiblanco);
+    padding: 0.625rem; /* 10px */
+}
+.cien{
+    font-size:1rem; 
+    color: var(--color--header-casiblanco);
+    padding: 0.3125rem; /* 5px */
+    border: 0.125rem solid var(--color--header-casiblanco); /* 2px */   
+    display: inline-block;
+    border-radius: 30px;
+}
+.doscientos{
+    font-size:1rem;
+    color: var(--color--header-casiblanco);
+    padding: 0.3125rem; /* 5px */
+    border: 0.125rem solid var(--color--header-casiblanco); /* 2px */
+    display: inline-block;
+    border-radius: 1.875rem; /* 30px */   
+}
+.trescientos{
+    font-size:1rem;
+    color: var(--color--header-casiblanco);
+    padding: 0.3125rem; /* 5px */
+    border: 0.125rem solid var(--color--header-casiblanco); /* 2px */
+    display: inline-block;
+    border-radius: 1.875rem; /* 30px */
+    content: end;
+}
+.ofertas{
+        display: flex; 
+        width: 100%; 
+        gap: 5vw; /* Ajuste flexible */
+        align-items: flex-end;
+        text-align: space-between; /* Centra el texto */
+}
+.body{
+    display: flex;
+    justify-content: space-between; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 80vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+}
+.contenedor{
+    max-width: 100%; /* 1200px adaptable */
+    padding: 1.25rem; /* 20px */
+    justify-content: space-between;   
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+}
+.contenedor .contenedor-items{
+    margin-top: 1.875rem; /* 30px */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1.875rem; /* 30px */
+    grid-row-gap: 1.875rem; /* 30px */
+    width: 80%;
+    transition: 3s;
+}
+.contenedor .contenedor-items .item{
+    max-width: 15rem; /* 250px */
+    padding: 1.25rem; /* 20px */
+    margin: 0.625rem; /* 10px */
+    border: 0.0625rem solid #666; /* 1px */
+    border-radius: 0.625rem; /* 10px */
+    padding: 1.25rem; /* 20px */
+    transition: 3s;
+    min-height: 15.625rem; /* 250px */
+}
+
+.contenedor .contenedor-items .item:hover {
+    box-shadow: 0 0 0.625rem #666; /* 10px */
+    transform: scale(1.05); /* Efecto de hover */
+    flex-wrap: wrap;
+}
+.contenedor .contenedor-items .img-item{
+    width: 100%;
+    height: 9.375rem; /* 150px */
+    object-fit: contain;
+    
+   
+}
+.contenedor-items .item .titulo-item{
+    display: block;
+    font-weight:bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor .contenedor-items   .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.375rem; /* 22px */  
+}
+.contenedor-items .item .boton-item{
+    display: block;
+    margin: 0.625rem auto; /* 10px */
+    border: none;
+    background:var(--color--negro);
+    color: var(--color-borde-blanco);
+    padding: 0.3125rem 0.9375rem; /* 5px 15px */
+    border-radius: 0.3125rem; /* 5px */
+    cursor:pointer;
+}
+.boton-item {
+    position: relative; /* Necesario para posicionar el tooltip */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    }
+.tooltip {
+    visibility: hidden; /* Ooculto por defecto */
+    width: 75%; /* 120px adaptable */
+    background-color: #333; /* fondo del tooltip */
+    color: #fff; /* ccolor del texto */
+    text-align: center; 
+    border-radius: 0.3125rem; /* 5px * borde redondo*/
+    padding: 5px; /* espaciado interno */
+    position: absolute; /*absoluta */
+    z-index: 1; /*  que esté por encima de otros elementos */
+    bottom: 125%; 
+    left: 50%; /* Centro horizontal */
+    margin-left: -50px; /* juste para centrar */
+    opacity: 0; /* invisible por defecto */
+    transition: opacity 0.3s; /* Transición suave */
+}
+
+.boton-item:hover .tooltip {
+    visibility: visible; /* Muestra el tooltip al pasar el mouse */
+    opacity: 1; /* Hace el tooltip visible */
+}
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 1.25rem 0; /* 20px 0 */
+}
+
+.footer-content {
+    max-width: 75%; /* 1200px adaptable */
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 0.9375rem; /* 15px */
+}
+
+.footer-links a {
+    color: #fff; /* Enlaces en blanco */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayar en hover */
+}
+
+/*  generales para móviles */
+
+@media (max-width: 480px) {
+    #hero h3 {
+        font-size: 1em;
+    }
+
+    .contenedor-items {
+        grid-template-columns: 1fr;
+    }
+}
+/* tablet */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.125rem; /* Aumentar un poco el tamaño de fuente */
+    }
+
+    #header {
+        padding: 1.5rem; /* Ajustar padding para tablets */
+    }
+
+    .contenedor {
+        max-width: 90%; /* Más ancho en tablets */
+    }
+
+    .contenedor-items {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+    }
+    
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.25rem; /* Aumentar más para escritorio */
+    }
+
+    #header {
+        padding: 2rem; /* Aumentar padding para escritorio */
+    }
+
+    .contenedor {
+        max-width: 100%; /* Menos ancho en escritorio */
+    }
+
+    .contenedor-items {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en escritorio */
+    }
+    .ero {
+        color: var(--color-fondo-naranja); /* Mantener color de texto */
+        max-width: 100%; /* Limitar el ancho máximo */
+    }
+    
+}
+
+/* Pantallas grandes */
+@media (min-width: 1440px) {
+    body {
+        font-size: 1.375rem; /* Aumentar más para pantallas grandes */
+    }
+
+    #header {
+        padding: 2rem; /* Ajustar padding para pantallas grandes */
+    }
+
+    .contenedor {
+        max-width: 70%; /* Menos ancho en pantallas grandes */
+    }
+
+    .contenedor-items {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+    }
+}
